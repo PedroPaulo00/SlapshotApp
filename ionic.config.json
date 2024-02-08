@@ -1,0 +1,7 @@
+{
+  "name": "Slapshot",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
