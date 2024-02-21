@@ -1,0 +1,55 @@
+.page-login .login-background {
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/slapshot-76529.appspot.com/o/background_app.webp?alt=media&token=9eb1535d-7ca9-49e0-bb3f-9273b85ca5a9');
+  background-size: cover;
+  background-position: center;
+  position: fixed; /* Alterado para position: fixed */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Alterado para 100vw */
+  height: 100vh; /* Alterado para 100vh */
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: transparent;
+}
+
+.page-login .login-background .overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.page-login .login-background ion-card.login-card ion-card-content {
+  padding: 0;
+}
+
+.page-login .login-background ion-card.login-card ion-list form {
+  background-color: transparent;
+}
+
+.page-login .login-background ion-card.login-card ion-list form .input-field {
+  --padding-start: 0;
+}
+
+.page-login .login-background .cadastro-link {
+  color: #ffffff;
+  text-align: center;
+  display: block;
+  margin-top: 20px;
+}
+
+.logo-container {
+  position: absolute;
+  z-index: 1;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+ion-content.custom-background {
+  --ion-background-color: transparent;
+}

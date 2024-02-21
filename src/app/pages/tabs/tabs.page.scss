@@ -1,0 +1,19 @@
+.custom-tabs {
+    ion-tab-bar {
+      --background: url('https://firebasestorage.googleapis.com/v0/b/slapshot-76529.appspot.com/o/black.jpg?alt=media&token=f396249a-1f4b-4726-bd2a-ba85c37de673') center center / cover;
+      background-size: cover;
+  
+      ion-tab-button {
+        color: white; /* Definindo a cor do texto como branco */
+      }
+    }
+  }
+  
+  .custom-header {
+    --background: url('https://firebasestorage.googleapis.com/v0/b/slapshot-76529.appspot.com/o/black.jpg?alt=media&token=f396249a-1f4b-4726-bd2a-ba85c37de673') center center / cover;
+    background-size: cover;
+  }
+  
+  .custom-header ion-toolbar {
+    background-color: transparent; /* Certifique-se de que a barra de ferramentas tenha fundo transparente */
+  }

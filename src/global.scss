@@ -24,3 +24,22 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+
+.header-title {
+  font-family: 'Kanit-Regular', sans-serif; /* Aplicando a fonte Kanit-Regular */
+  color: #6B3D92;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+@font-face {
+  font-family: 'Kanit-Regular';
+  src: url('../assets/fonts/Kanit-Regular.ttf') format('truetype'); /* Corrigindo o caminho */
+}
+
+/* Restante do seu arquivo global.scss */
+
+
+  

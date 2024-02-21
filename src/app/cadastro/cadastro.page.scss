@@ -1,0 +1,35 @@
+.page-cadastro {
+    .cadastro-background {
+      background-image: url('https://firebasestorage.googleapis.com/v0/b/slapshot-76529.appspot.com/o/background_login.jpg?alt=media&token=fe2228dd-39ea-42fb-abaf-6857b7db8400');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      height: 100vh;
+      margin-top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end; /* Modificado para alinhar o formulário ao fundo */
+    }
+  
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.7);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; /* Modificado para cobrir todo o fundo */
+    }
+  
+    form {
+        width: 80%;
+        margin-top: auto;
+        background-color: transparent; /* Adicionando o fundo transparente */
+        padding: 20px;
+      }
+      
+  
+    ion-item {
+      --padding-start: 0; /* Removendo o espaço em branco no início do input */
+    }
+  }
+  
