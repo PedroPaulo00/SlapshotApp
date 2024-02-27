@@ -1,0 +1,33 @@
+.custom-background {
+    --background: url('https://firebasestorage.googleapis.com/v0/b/slapshot-76529.appspot.com/o/grey.avif?alt=media&token=80ed2b18-1bec-4cc6-91d0-3725ec5be45c') center center / cover;
+    background-size: cover;
+  }
+  
+  ion-content.custom-background {
+    --ion-background-color: transparent;
+    color: white; 
+  }
+  
+  ion-content.custom-background ion-list {
+    color: white; 
+  }
+  
+  .custom-text {
+    color: white;
+  }
+  
+  .custom-toolbar {
+    --background: url('https://firebasestorage.googleapis.com/v0/b/slapshot-76529.appspot.com/o/black.jpg?alt=media&token=f396249a-1f4b-4726-bd2a-ba85c37de673') center center / cover;
+    background-size: cover;
+    color: white !important;
+    background-color: transparent !important; 
+  }
+
+.encerrar-sessao-button {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  color: red;
+}
+
+  

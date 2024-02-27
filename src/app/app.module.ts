@@ -26,7 +26,7 @@ import { ScreenOrientation } from '@ionic-native/screen-orientation/ngx'; // Adi
   ],
   providers: [
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
-    ScreenOrientation // Adicionado
+    ScreenOrientation 
   ],
   bootstrap: [AppComponent],
 })

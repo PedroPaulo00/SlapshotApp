@@ -1,0 +1,63 @@
+<ion-content class="page-cadastro">
+  <div class="container">
+    <div class="cadastro-background">
+      <div class="overlay"></div>
+      <div class="back-button">
+        <a href="/login"><ion-icon name="arrow-undo-outline"></ion-icon></a>
+      </div>
+
+      <form class="login-form" [formGroup]="formCadastrar" (ngSubmit)="submitForm()">
+        <input type="text" placeholder="Nome" formControlName="nome">
+        <div *ngIf="formCadastrar.get('nome').invalid && (formCadastrar.get('nome').dirty || formCadastrar.get('nome').touched)" style="color: white">
+          <div *ngIf="formCadastrar.get('nome').errors?.['required']">O nome é obrigatório.</div>
+          <div *ngIf="formCadastrar.get('nome').errors?.['pattern']">O nome deve conter no máximo 30 letras (incluindo espaços) e não pode conter caracteres especiais ou números.</div>
+        </div>
+
+        <input type="tel" placeholder="Telefone" formControlName="telefone">
+        <div *ngIf="formCadastrar.get('telefone').invalid && (formCadastrar.get('telefone').dirty || formCadastrar.get('telefone').touched)" style="color: white">
+          <div *ngIf="formCadastrar.get('telefone').errors?.['required']">O telefone é obrigatório.</div>
+          <div *ngIf="formCadastrar.get('telefone').errors?.['pattern']">O telefone deve conter exatamente 11 dígitos e apenas números.</div>
+        </div>
+
+        <input type="date" placeholder="Data de Nascimento" formControlName="dataNascimento">
+        <div *ngIf="formCadastrar.get('dataNascimento').invalid && (formCadastrar.get('dataNascimento').dirty || formCadastrar.get('dataNascimento').touched)" style="color: white">
+          <div *ngIf="formCadastrar.get('dataNascimento').errors?.['required']">A data de nascimento é obrigatória.</div>
+          <div *ngIf="formCadastrar.get('dataNascimento').errors?.['dataNascimentoInvalida']">A data de nascimento deve ser anterior a 2005.</div>
+        </div>
+
+        <input type="text" placeholder="CPF" formControlName="cpf">
+        <div *ngIf="formCadastrar.get('cpf').invalid && (formCadastrar.get('cpf').dirty || formCadastrar.get('cpf').touched)" style="color: white">
+          <div *ngIf="formCadastrar.get('cpf').errors?.['required']">O CPF é obrigatório.</div>
+          <div *ngIf="formCadastrar.get('cpf').errors?.['pattern']">O CPF deve conter exatamente 11 dígitos e apenas números.</div>
+        </div>
+
+        <input type="email" placeholder="Email" formControlName="email">
+        <div *ngIf="formCadastrar.get('email').invalid && (formCadastrar.get('email').dirty || formCadastrar.get('email').touched)" style="color: white">
+          <div *ngIf="formCadastrar.get('email').errors?.['required']">O email é obrigatório.</div>
+          <div *ngIf="formCadastrar.get('email').errors?.['pattern']">O email deve ser do formato 'nome'&#64;'provedor'.com.</div>
+
+        </div>
+
+        <input type="password" placeholder="Senha" formControlName="senha">
+        <div *ngIf="formCadastrar.get('senha').invalid && (formCadastrar.get('senha').dirty || formCadastrar.get('senha').touched)" style="color: white">
+          <div *ngIf="formCadastrar.get('senha').errors?.['required']">A senha é obrigatória.</div>
+          <div *ngIf="formCadastrar.get('senha').errors?.['minlength']">A senha deve ter no mínimo 6 caracteres.</div>
+        </div>
+
+        <input type="password" placeholder="Confirmação de senha" formControlName="confSenha">
+        <div *ngIf="formCadastrar.get('confSenha').invalid && (formCadastrar.get('confSenha').dirty || formCadastrar.get('confSenha').touched)" style="color: white">
+          <div *ngIf="formCadastrar.get('confSenha').errors?.['required']">A confirmação de senha é obrigatória.</div>
+          <div *ngIf="formCadastrar.hasError('senhasDiferentes')">As senhas não coincidem.</div>
+        </div>
+
+        <select formControlName="timePreferido">
+          <option *ngFor="let time of times" [value]="time.nome">{{ time.nome }}</option>
+        </select>
+
+        <img [src]="formCadastrar.get('timePreferido').value ? getLogoUrl(formCadastrar.get('timePreferido').value) : 'https://firebasestorage.googleapis.com/v0/b/slapshot-76529.appspot.com/o/nhl.png?alt=media&token=43c417c1-2ef7-4664-92ac-da058317afe4'" alt="Logo do Time" class="time-logo">
+
+        <button type="submit" expand="full" color="success" class="btn-cadastrar">Cadastrar</button>
+      </form>
+    </div>
+  </div>
+</ion-content>

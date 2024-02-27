@@ -1,0 +1,44 @@
+// styles.scss (ou seu arquivo SCSS correspondente)
+
+// Classe para ajustar o tamanho da imagem
+.imagem-pequena {
+    width: 50%; 
+    margin: 0 auto; 
+  }
+  
+  .texto-branco {
+    color: white; 
+  }
+  
+  .custom-background {
+    --background: url('https://firebasestorage.googleapis.com/v0/b/slapshot-76529.appspot.com/o/grey.avif?alt=media&token=80ed2b18-1bec-4cc6-91d0-3725ec5be45c') center center / cover;
+    background-size: cover;
+  }
+  
+  ion-content.custom-background {
+    --ion-background-color: transparent;
+  }
+
+  .custom-toolbar {
+    --background: url('https://firebasestorage.googleapis.com/v0/b/slapshot-76529.appspot.com/o/black.jpg?alt=media&token=f396249a-1f4b-4726-bd2a-ba85c37de673') center center / cover;
+    background-size: cover;
+    background-color: transparent !important;
+    color: white !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .back-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+    background-color: transparent;
+    border: none; 
+  }
+  
+  .back-button ion-icon {
+    color: white; 
+  }
+  

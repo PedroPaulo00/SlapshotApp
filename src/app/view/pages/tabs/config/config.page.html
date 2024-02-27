@@ -1,0 +1,77 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="custom-toolbar">
+    <ion-title class="texto-branco">Configurações</ion-title>
+    <ion-button class="back-button" (click)="voltarParaHome()">
+      <ion-icon name="arrow-back"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="custom-background">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Configurações</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-list>
+    <ion-item>
+      <ion-label class="texto-branco">Idioma</ion-label>
+      <ion-select placeholder="Padrão" class="texto-branco">
+        <ion-select-option value="ar" class="texto-branco">عربى</ion-select-option>
+        <ion-select-option value="cs" class="texto-branco">Čeština</ion-select-option>
+        <ion-select-option value="da" class="texto-branco">Dansk</ion-select-option>
+        <ion-select-option value="de" class="texto-branco">Deutsch</ion-select-option>
+        <ion-select-option value="de-ch" class="texto-branco">Schweizerdeutsch</ion-select-option>
+        <ion-select-option value="en" class="texto-branco">English</ion-select-option>
+        <ion-select-option value="es" class="texto-branco">Español</ion-select-option>
+        <ion-select-option value="fi" class="texto-branco">Suomi</ion-select-option>
+        <ion-select-option value="fr" class="texto-branco">Français</ion-select-option>
+        <ion-select-option value="it" class="texto-branco">Italiano</ion-select-option>
+        <ion-select-option value="ja" class="texto-branco">日本語</ion-select-option>
+        <ion-select-option value="pt-br" class="texto-branco">Português</ion-select-option>
+        <ion-select-option value="ru" class="texto-branco">Русский</ion-select-option>
+        <ion-select-option value="sv" class="texto-branco">Svenska</ion-select-option>
+        <ion-select-option value="uk" class="texto-branco">Українська</ion-select-option>
+        <ion-select-option value="zh" class="texto-branco">中文</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label class="texto-branco">Qualidade</ion-label>
+      <ion-select placeholder="Padrão" class="texto-branco">
+        <ion-select-option value="480p" class="texto-branco">480p</ion-select-option>
+        <ion-select-option value="720p" class="texto-branco">720p</ion-select-option>
+        <ion-select-option value="1080p" class="texto-branco">1080p</ion-select-option>
+        <ion-select-option value="4k" class="texto-branco">4K</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label class="texto-branco">Notificações</ion-label>
+      <ion-toggle slot="end"></ion-toggle>
+    </ion-item>
+
+    <ion-item>
+      <ion-label class="texto-branco">Reprodução automática</ion-label>
+      <ion-toggle slot="end"></ion-toggle>
+    </ion-item>
+
+    <ion-item>
+      <ion-label class="texto-branco">FAQ e Ajuda</ion-label>
+      <ion-button slot="end" fill="clear" class="texto-branco">Detalhes</ion-button>
+    </ion-item>
+
+  </ion-list>
+
+  <div style="text-align: center;" class="imagem-pequena">
+    <img src="https://firebasestorage.googleapis.com/v0/b/slapshot-76529.appspot.com/o/logo_slapshot.png?alt=media&token=6603cb63-c9ce-422d-8879-c43679b963f8" alt="Logo Slapshot" class="texto-branco">
+  </div>
+
+  <p style="text-align: center; font-size: smaller;" class="texto-branco">
+    Slapshot ®<br>
+    Guarapuava - PR, Brasil<br>
+    2024
+  </p>
+
+</ion-content>

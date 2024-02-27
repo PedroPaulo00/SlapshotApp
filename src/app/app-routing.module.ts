@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-import { DetalhesPartidaPage } from './pages/tabs/detalhes-partida/detalhes-partida.page';
-import { HomePage } from './pages/tabs/home/home.page';
+import { DetalhesPartidaPage } from './view/pages/tabs/detalhes-partida/detalhes-partida.page';
+import { HomePage } from './view/pages/tabs/home/home.page';
 
 const routes: Routes = [
   {
@@ -11,27 +11,27 @@ const routes: Routes = [
   },
   {
     path: 'detalhes-partida/:id',
-    component: DetalhesPartidaPage // Rota para a página de detalhes da partida com um parâmetro de ID
+    component: DetalhesPartidaPage
   },
   {
     path: 'tabs',
-    loadChildren: () => import('./pages/tabs/tabs.module').then( m => m.TabsPageModule)
+    loadChildren: () => import('./view/pages/tabs/tabs.module').then( m => m.TabsPageModule)
   },
   {
     path: 'login',
-    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+    loadChildren: () => import('./view/login/login.module').then( m => m.LoginPageModule)
   },
   {
     path: 'cadastro',
-    loadChildren: () => import('./cadastro/cadastro.module').then( m => m.CadastroPageModule)
+    loadChildren: () => import('./view/cadastro/cadastro.module').then( m => m.CadastroPageModule)
   },
   {
     path: 'detalhes-partida',
-    loadChildren: () => import('./pages/tabs/detalhes-partida/detalhes-partida.module').then( m => m.DetalhesPartidaPageModule)
+    loadChildren: () => import('./view/pages/tabs/detalhes-partida/detalhes-partida.module').then( m => m.DetalhesPartidaPageModule)
   },
   {
-    path: 'home', // Adicione esta rota para a página de home
-    component: HomePage // Especifique o componente que deve ser carregado
+    path: 'home', 
+    component: HomePage 
   }
 ];
 

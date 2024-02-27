@@ -1,0 +1,16 @@
+<ion-content (click)="detectarToque($event)">
+  <div class="video-container">
+    <video controls playsinline autoplay muted loop style="width: 100%; height: 100%; object-fit: cover;">
+      <source *ngIf="partidaId === 'partida1'" [src]="videoUrlPartida1" type="video/mp4">
+      <source *ngIf="partidaId === 'partida2'" [src]="videoUrlPartida2" type="video/mp4">
+      <source *ngIf="partidaId === 'partida3'" [src]="videoUrlPartida3" type="video/mp4">
+      <source *ngIf="partidaId === 'partida4'" [src]="videoUrlPartida4" type="video/mp4">
+      <source *ngIf="partidaId === 'partida5'" [src]="videoUrlPartida5" type="video/mp4">
+      <source *ngIf="partidaId === 'partida6'" [src]="videoUrlPartida6" type="video/mp4">
+      Seu navegador não suporta o elemento de vídeo.
+    </video>
+    <ion-button *ngIf="backButtonVisible" class="back-button" (click)="voltarParaHome()">
+      <ion-icon name="arrow-back"></ion-icon>
+    </ion-button>
+  </div>
+</ion-content>

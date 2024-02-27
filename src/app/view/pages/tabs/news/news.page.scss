@@ -1,0 +1,111 @@
+div {
+  margin-top: 10px;
+  height: 30vh;
+  width: 94%;
+}
+
+div > swiper-container {
+  --swiper-pagination-color: var(--ion-color-primary);
+}
+
+div > swiper-container > swiper-slide {
+  height: 27vh;
+}
+
+div > swiper-container > swiper-slide > img {
+  width: 100%;
+  height: 22vh;
+  border-radius: 5px;
+  box-shadow: -1px 11px 13px -6px rgb(87, 86, 86);
+}
+
+ion-label {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+ion-label > h4 {
+  font-weight: bold !important;
+  font-size: 1.2rem;
+}
+
+ion-label > p {
+  font-size: 0.7rem;
+}
+
+ion-item {
+  font-size: 0.8rem;
+}
+
+ion-item > ion-thumbnail {
+  height: 16vh;
+  width: 25vw;
+}
+
+ion-item > ion-thumbnail > img {
+  border-radius: 5px;
+  height: 100%;
+  width: 100%;
+}
+
+.custom-header {
+  --min-height: 35px;
+}
+
+.custom-header ion-title {
+  font-size: 16px;
+}
+
+.custom-background {
+  --background: url('https://firebasestorage.googleapis.com/v0/b/slapshot-76529.appspot.com/o/grey.avif?alt=media&token=80ed2b18-1bec-4cc6-91d0-3725ec5be45c') center center / cover;
+  background-size: cover;
+}
+
+ion-content.custom-background {
+  --ion-background-color: transparent;
+}
+
+ion-card-header {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+}
+
+ion-card-header ion-card-title,
+ion-card-header ion-text-subtitle,
+ion-card-header ion-text {
+  color: white !important;
+}
+
+.custom-toolbar {
+  --background: url('https://firebasestorage.googleapis.com/v0/b/slapshot-76529.appspot.com/o/black.jpg?alt=media&token=f396249a-1f4b-4726-bd2a-ba85c37de673') center center / cover;
+  background-size: cover;
+  background-color: transparent !important;
+  color: white !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  max-height: 50%;
+  max-width: 50px;
+  margin-left: 5px;
+}
+
+.title-content {
+  display: flex;
+  align-items: center;
+}
+
+.title-image {
+  max-height: 60%;
+  max-width: 60px;
+  margin-right: 4px;
+  margin-top: 4px;
+}
+
+.searchbar {
+  z-index: 1;
+  color: white;
+}

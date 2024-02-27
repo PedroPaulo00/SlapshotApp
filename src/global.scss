@@ -27,7 +27,7 @@
 
 
 .header-title {
-  font-family: 'Kanit-Regular', sans-serif; /* Aplicando a fonte Kanit-Regular */
+  font-family: 'Kanit-Regular', sans-serif; 
   color: #6B3D92;
   font-size: 24px;
   font-weight: bold;
@@ -35,11 +35,14 @@
 }
 
 @font-face {
-  font-family: 'Kanit-Regular';
-  src: url('../assets/fonts/Kanit-Regular.ttf') format('truetype'); /* Corrigindo o caminho */
+  font-family: 'Anta';
+  src: url('assets/fonts/Anta-Regular.ttf') format('truetype');
 }
 
-/* Restante do seu arquivo global.scss */
+* {
+  font-family: 'Anta', sans-serif; 
+}
+
 
 
   

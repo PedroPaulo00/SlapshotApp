@@ -1,0 +1,99 @@
+.page-cadastro {
+    .container::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+    }
+  
+    .cadastro-background {
+      background-image: url('https://firebasestorage.googleapis.com/v0/b/slapshot-76529.appspot.com/o/desktop-wallpaper-ice-hockey-ice-hockey-pond-hockey.jpg?alt=media&token=4444bd21-e55f-4ac1-952d-9b68daace3ce');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      min-height: 100vh;
+      margin-top: 0;
+      display: flex;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.5); 
+    }
+  
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.7);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  
+    .login-form {
+      width: 80%;
+      margin-top: auto;
+      background-color: rgba(19, 17, 17, 0.6);
+      padding: 20px;
+      border-radius: 10px;
+      z-index: 1; 
+      margin-top:50px;
+    }
+  
+    input[type="text"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="email"],
+    input[type="password"],
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+  
+    .btn-cadastrar {
+      margin: 0 auto; 
+      display: block; 
+    
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #000000;
+      color: #fff;
+      cursor: pointer;
+    }
+    
+}
+
+.page-cadastro input[type="text"],
+.page-cadastro input[type="tel"],
+.page-cadastro input[type="date"],
+.page-cadastro input[type="email"],
+.page-cadastro input[type="password"],
+.page-cadastro select {
+  color: #ffffff; 
+}
+
+.back-button {
+    margin-bottom: 20px; 
+    z-index: 1;
+  }
+  
+  .back-button a {
+    display: inline-block;
+    padding: 0px;
+    background-color: transparent;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    z-index: 1;
+  }
+  
+  .back-button a:hover {
+    background-color: #999;
+  }
+  

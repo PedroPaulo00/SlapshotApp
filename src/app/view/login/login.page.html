@@ -1,0 +1,17 @@
+<body>
+  <div class="container">
+    <div class="logo-container">
+      <img src="https://firebasestorage.googleapis.com/v0/b/slapshot-76529.appspot.com/o/logo1.png?alt=media&token=a5e49a1e-705d-42ec-bc3b-9d81d9a63242" alt="Logo Slapshot" class="large-logo">
+    </div>
+    <form class="login-form" (ngSubmit)="submitForm()" [formGroup]="formLogar">
+      <input type="email" placeholder="E-mail" formControlName="email">
+      <input type="password" placeholder="Senha" formControlName="senha">
+      <div class="button-container">
+        <p style="font-size: 60%;">Não tem cadastro? <span style="color: rgb(133, 133, 228); text-decoration: underline; cursor: pointer;" (click)="irParaCadastro()">Cadastre-se</span>.</p>
+        <button type="submit">Entrar</button>
+      </div>      
+      <p style="color: rgba(255, 255, 255, 0.493); text-decoration: underline; cursor: pointer; text-align: center; font-size: 70%;" (click)="recuperarSenha()">Esqueci minha senha</p> <!-- Alterado para ser uma escrita clicável -->
+      <p *ngIf="mensagem" style="color: green; text-align: center; font-size: 70%;">{{ mensagem }}</p> <!-- Adicionando mensagem de sucesso -->
+    </form>
+  </div>
+</body>

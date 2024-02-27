@@ -1,0 +1,50 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/perfil"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Seu Plano</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Pagamento e Assinatura</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Detalhes da Assinatura</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list lines="full">
+        <ion-item>
+          <ion-label>Vigência:</ion-label>
+          <ion-text slot="end"style="color: green;">Vigente</ion-text>
+        </ion-item>
+        <ion-item>
+          <ion-label>Preço:</ion-label>
+          <ion-text slot="end">R$ 29,99/mês</ion-text>
+        </ion-item>
+        <ion-item>
+          <ion-label>Próximo pagamento:</ion-label>
+          <ion-text slot="end">01/04/2024</ion-text>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <img src="https://firebasestorage.googleapis.com/v0/b/slapshot-76529.appspot.com/o/ppix.png?alt=media&token=c75843fb-0fd7-4c8a-9378-2be5d816c73e" alt="Descrição da Imagem">
+
+  <ion-button expand="block" (click)="openPixForm()">Pagar por Pix</ion-button>
+
+  <img src="https://firebasestorage.googleapis.com/v0/b/slapshot-76529.appspot.com/o/cards.png?alt=media&token=e084c09b-1e66-4598-ae51-2808677103ce" alt="Descrição da Imagem">
+
+  <ion-button expand="block" (click)="openCardForm()">Adicionar cartão de crédito</ion-button>
+
+  <ion-button expand="block" (click)="openDebForm()">Adicionar cartão de dédito</ion-button>
+
+</ion-content>

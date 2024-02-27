@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar class="custom-toolbar">
+    <ion-buttons slot="start">
+      <ion-img src="https://firebasestorage.googleapis.com/v0/b/slapshot-76529.appspot.com/o/symbol-NHL-removebg-preview.png?alt=media&token=72fdc9a9-d801-4bc5-9f81-c6ec08dcb815" class="logo"></ion-img>
+    </ion-buttons>
+    <ion-title mode="md">
+      <img src="https://firebasestorage.googleapis.com/v0/b/slapshot-76529.appspot.com/o/imagem_2024-02-21_133242646-removebg-preview.png?alt=media&token=8a407450-9e0f-4b12-b78f-b667b34f7f6f" class="title-image" alt="Título Imagem">
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="irParaConfig()">
+        <ion-icon name="settings-outline"></ion-icon>
+      </ion-button>      
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="custom-background">
+  <ion-searchbar class="search" (ionChange)="filtrarPartidas($event.target.value)" placeholder="Pesquisar partidas"></ion-searchbar>
+  
+  <ion-list>
+    <ion-list-header class="ion-margin-bottom">
+      <ion-label>
+        <p style="color: white; text-align: center;">Partidas do dia <span>{{ dataAtual }}</span>!</p>
+      </ion-label>
+    </ion-list-header>
+
+    <ion-card *ngFor="let partida of partidas" class="custom-card" (click)="irParaDetalhesPartida(partida.id)" [style.background-image]="'url(' + partida.backg + ')'">
+      <ion-card-content>
+        <div class="card-content">
+          <ion-thumbnail slot="start">
+            <img [src]="partida.imagemUrl" alt="Imagem da Partida">
+          </ion-thumbnail>
+          <div class="details">
+            <ion-card-title>{{ partida.nome }}</ion-card-title>
+            <p>
+              <br>
+              <br>
+              <ion-icon name="location"></ion-icon>
+              {{ partida.local }}
+            </p>            
+            <p>
+              <ion-icon name="time"></ion-icon>
+              {{ partida.horario }}
+            </p>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </ion-list>
+</ion-content>
