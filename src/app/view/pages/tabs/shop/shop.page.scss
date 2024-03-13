@@ -1,0 +1,89 @@
+.custom-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Cor preta com 80% de opacidade */
+  }
+  
+  .custom-card ion-thumbnail {
+    width: 60px; /* Tamanho padronizado da thumbnail */
+    height: 60px; /* Tamanho padronizado da thumbnail */
+    margin-right: 10px; /* Espaçamento entre a thumbnail e o conteúdo */
+  }
+  
+  .custom-card .card-content {
+    display: flex;
+    align-items: center; /* Alinhar itens verticalmente */
+    color: white; /* Texto branco */
+  }
+  
+  .custom-card .card-content .details {
+    flex-grow: 1; /* Ocupa todo o espaço restante */
+  }
+  
+  .custom-card .card-content .details ion-card-title {
+    font-weight: bold !important;
+    font-size: 1.2rem;
+    color: white; /* Texto branco */
+  }
+  
+  .custom-card .card-content .details p {
+    font-size: 0.7rem;
+    color: white; /* Texto branco */
+  }
+  
+  .custom-background {
+    --background: url('https://firebasestorage.googleapis.com/v0/b/slapshot-76529.appspot.com/o/backg.avif?alt=media&token=4a0b4e65-b0d8-4064-86d8-d0a6303518ee') center center / cover;
+    background-size: cover;
+  }
+  
+  ion-content.custom-background {
+    --ion-background-color: transparent;
+  }
+  
+  .custom-toolbar {
+    --background: url('https://firebasestorage.googleapis.com/v0/b/slapshot-76529.appspot.com/o/backg_header.jpg?alt=media&token=1bac2d7c-9031-4920-bce7-5d49faa122e8') center center / cover;
+    background-size: cover;
+    background-color: transparent !important;
+    color: white !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    max-height: 50%;
+    max-width: 50px; /* Defina o tamanho máximo do logo */
+    margin-left: 5px; /* Adicione margem à esquerda para separar o logo do texto */
+  }
+  
+  .title-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .title-image {
+    max-height: 60%;
+    max-width: 60px; /* Defina o tamanho máximo da imagem do título */
+    margin-right: 4px; /* Adicione margem à direita para separar a imagem do texto */
+    margin-top: 4px; /* Adicione margem à direita para separar a imagem do texto */
+  }
+  
+  .search {
+    color: white;
+    z-index: 1;
+  }
+  
+  ion-card.custom-card {
+    --background: none; /* Removendo o background padrão */
+  }
+  
+  ion-card.custom-card::part(ion-card-content) {
+    background-image: var(--background); /* Definindo o background personalizado */
+    background-size: cover;
+    color: white; /* Texto branco */
+  }
+  

@@ -50,12 +50,6 @@
           <div *ngIf="formCadastrar.hasError('senhasDiferentes')">As senhas não coincidem.</div>
         </div>
 
-        <select formControlName="timePreferido">
-          <option *ngFor="let time of times" [value]="time.nome">{{ time.nome }}</option>
-        </select>
-
-        <img [src]="formCadastrar.get('timePreferido').value ? getLogoUrl(formCadastrar.get('timePreferido').value) : 'https://firebasestorage.googleapis.com/v0/b/slapshot-76529.appspot.com/o/nhl.png?alt=media&token=43c417c1-2ef7-4664-92ac-da058317afe4'" alt="Logo do Time" class="time-logo">
-
         <button type="submit" expand="full" color="success" class="btn-cadastrar">Cadastrar</button>
       </form>
     </div>

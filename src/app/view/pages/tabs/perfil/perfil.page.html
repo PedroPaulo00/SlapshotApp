@@ -8,16 +8,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" class="custom-background">
-
-  <ion-item class="custom-text">
-    <ion-label position="stacked">Time Preferido</ion-label>
-    <ion-select [(ngModel)]="userProfile.timePreferido" [disabled]="!editingProfile">
-      <ion-select-option *ngFor="let time of times" [value]="time.nome">{{ time.nome }}</ion-select-option>
-    </ion-select>
-    <img *ngIf="userProfile.timePreferido" [src]="getLogoUrl(userProfile.timePreferido)" alt="Logo do Time" class="time-logo">
-  </ion-item>
-  
+<ion-content [fullscreen]="true" class="custom-background">  
 
   <ion-list lines="full" *ngIf="userProfile" class="custom-text">
     <ion-item class="custom-text">

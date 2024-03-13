@@ -1,7 +1,7 @@
 .custom-background {
-    --background: url('https://firebasestorage.googleapis.com/v0/b/slapshot-76529.appspot.com/o/grey.avif?alt=media&token=80ed2b18-1bec-4cc6-91d0-3725ec5be45c') center center / cover;
-    background-size: cover;
-  }
+  --background: url('https://firebasestorage.googleapis.com/v0/b/slapshot-76529.appspot.com/o/backg.avif?alt=media&token=4a0b4e65-b0d8-4064-86d8-d0a6303518ee') center center / cover;
+  background-size: cover;
+}
   
   ion-content.custom-background {
     --ion-background-color: transparent;
@@ -17,8 +17,7 @@
   }
   
   .custom-toolbar {
-    --background: url('https://firebasestorage.googleapis.com/v0/b/slapshot-76529.appspot.com/o/black.jpg?alt=media&token=f396249a-1f4b-4726-bd2a-ba85c37de673') center center / cover;
-    background-size: cover;
+    --background: url('https://firebasestorage.googleapis.com/v0/b/slapshot-76529.appspot.com/o/backg_header.jpg?alt=media&token=1bac2d7c-9031-4920-bce7-5d49faa122e8') center center / cover;
     color: white !important;
     background-color: transparent !important; 
   }

@@ -25,6 +25,10 @@ const routes: Routes = [
         loadChildren: () => import('./config/config.module').then( m => m.ConfigPageModule)
       },
       {
+        path: 'shop',
+        loadChildren: () => import('./shop/shop.module').then( m => m.ShopPageModule)
+      },
+      {
         path: '',
         redirectTo: '/login',
         pathMatch: 'full'

@@ -32,6 +32,10 @@ const routes: Routes = [
   {
     path: 'home', 
     component: HomePage 
+  },
+  {
+    path: 'shop',
+    loadChildren: () => import('./view/pages/tabs/shop/shop.module').then( m => m.ShopPageModule)
   }
 ];
 
